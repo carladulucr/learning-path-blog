@@ -68,3 +68,5 @@ end
 gem "devise", ">= 5.0"
 
 gem "tailwindcss-rails", ">= 4.7"
+
+gem "aws-sdk-s3", ">= 1.245"
