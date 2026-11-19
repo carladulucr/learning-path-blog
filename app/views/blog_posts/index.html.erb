@@ -12,9 +12,11 @@
   </div>
 <% end %>
 
-<div class="my-16">
-  <%== @pagy.series_nav %>
-</div>
+<% if @pagy.count > @pagy.limit %>
+  <div class="my-16">
+    <%== @pagy.series_nav %>
+  </div>
+<% end %>
 
 
 
