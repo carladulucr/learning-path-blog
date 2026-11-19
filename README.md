@@ -2,7 +2,7 @@
 
 Aplicación web tipo blog desarrollada con **Ruby on Rails 8**, siguiendo buenas prácticas de arquitectura MVC, autenticación, manejo de archivos enriquecidos y despliegue en producción.
 
-🌐 **Demo en vivo:** [https://onrender.com](https://onrender.com)
+🌐 **Demo en vivo:** https://learning-path-blog-1-mxx3.onrender.com
 
 ---
 
