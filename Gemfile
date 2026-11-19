@@ -70,3 +70,5 @@ gem "devise", ">= 5.0"
 gem "tailwindcss-rails", ">= 4.7"
 
 gem "aws-sdk-s3", ">= 1.245"
+
+gem "pagy", ">= 43.8"

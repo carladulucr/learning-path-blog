@@ -3,8 +3,10 @@ class BlogPostsController < ApplicationController
   before_action :set_blog_post, except: [:index, :new, :create]
 
   def index
-    @blog_posts = user_signed_in? ? BlogPost.sorted : BlogPost.published.sorted
+  @blog_posts = user_signed_in? ? BlogPost.sorted : BlogPost.published.sorted
+  @pagy, @blog_posts = pagy(@blog_posts)
   end
+
 
   def show
   end
