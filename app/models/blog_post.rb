@@ -1,4 +1,5 @@
 class BlogPost < ApplicationRecord
+  has_one_attached :cover_image
   has_rich_text :content
 
   validates :title, presence: true
@@ -21,4 +22,3 @@ class BlogPost < ApplicationRecord
     published_at? && published_at > Time.current
   end
 end
-
