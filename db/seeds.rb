@@ -8,11 +8,12 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-user = User.where(email: "carladulucr@gmail.com").first_or_initialize
+user = User.where(email: ENV.fetch("ADMIN_EMAIL", "admin@example.com")).first_or_initialize
 user.update!(
-  password: "carladuluc12504",
-  password_confirmation: "carladuluc12504"
+  password: ENV.fetch("ADMIN_PASSWORD", "password123"),
+  password_confirmation: ENV.fetch("ADMIN_PASSWORD", "password123")
 )
+
 
 #100.times do |i|
 # BlogPost.create(
